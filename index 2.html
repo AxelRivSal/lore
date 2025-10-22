@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Descarga de imágenes</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      margin: 0;
+      padding: 2rem;
+      background: #f6f7fb;
+      color: #111;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    header { text-align: center; margin-bottom: 2rem; }
+    .downloads {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+    a.download-link {
+      display: inline-block;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      transition: background 0.3s;
+      width: 250px;
+      text-align: center;
+      font-weight: 500;
+    }
+    a.download-link:hover {
+      background: #0056b3;
+    }
+    footer { text-align:center; margin-top:2rem; font-size:0.9rem; color:#555; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Descarga de Imágenes</h1>
+      <p>Haz clic en los botones para descargar cada imagen.</p>
+    </header>
+
+    <main class="downloads">
+      <!-- Enlace 1 -->
+      <a href="pasteldezana.png" download class="download-link">Descargar Imagen 1</a>
+
+      <!-- Enlace 2 -->
+      <a href="recetaarroz.png" download class="download-link">Descargar Imagen 2</a>
+
+      <!-- Enlace 3 -->
+      <a href="recetacurry.png" download class="download-link">Descargar Imagen 3</a>
+
+      <!-- Enlace 4 -->
+      <a href="pastapesto.png" download class="download-link">Descargar Imagen 4</a>
+    </main>
+
+    <footer>
+      Hecho con ❤️ — coloca tus imágenes en la carpeta <strong>images</strong>.
+    </footer>
+  </div>
+</body>
+</html>
